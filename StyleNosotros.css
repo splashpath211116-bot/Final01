@@ -1,0 +1,122 @@
+:root {
+    --azul-marino: #03045E;
+    --azul-oceano: #0077B6;
+    --azul-vibrante: #00B4D8;
+    --azul-cielo: #90E0EF;
+    --azul-fondo: #CAF0F8;
+    --blanco: #FFFFFF;
+}
+:root {
+  --bs-body-font-family: "Nunito", sans-serif;;
+}
+body{
+    h1, h2, h3{
+    font-family: "Grandstander", cursive;
+    }
+}
+.Fondo{
+    background-color: #03045E !important;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(137, 207, 240, 0.8), 0 0 20px rgba(137, 207, 240, 0.5);
+}
+.nav-underline .nav-link.active, 
+.nav-underline .nav-link:hover {
+    border-bottom-color: #38b6ff;
+    border-bottom-width: 3px;
+}
+.nav-item:hover{
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(137, 207, 240, 0.8);
+}
+.BotonSesion{
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.BotonSesion:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(137, 207, 240, 0.8);
+}
+.BotonSesion svg {
+  color: #c0c0c0;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.BotonSesion:hover svg {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+
+.FondoFooter{
+    background-image: url(Img/Footer.png);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    padding-top: 80px; 
+    padding-bottom: 40px;
+}
+footer .container{
+    padding-left: 250px
+}
+footer{
+    color: #FFFFFF;
+}
+footer img{
+    display: block;
+    justify-content: center;
+}
+footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: 0.8;
+    color: #a5f3fc !important;
+}
+
+.Inicio {
+  background-color: #1a2026 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.InicioSesion {
+  background-color: #00B4D8 !important;
+  border: 1px solid #2d3748 !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
+  padding: 12px;
+}
+
+.InicioSesion:focus {
+  border-color: #00B4D8 !important;
+  box-shadow: 0 0 10px #03045E !important;
+}
+
+.btn-gaming {
+  background-color: #00B4D8;
+  color: #0f1416;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gaming:hover {
+  background-color: #38b6ff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px #0077B6;
+}
