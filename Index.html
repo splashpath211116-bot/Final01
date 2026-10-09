@@ -12,116 +12,147 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="background-color: #F4F1DE;">
 
     <header class="content">
-
-        <nav class="navbar navbar-expand-lg navbar-dark Fondo fixed-top px-4">
-
+  
+        <nav class="navbar navbar-expand-lg navbar-dark Fondo fixed-top px-3 px-md-4">
+   
             <div class="container-fluid">
+      
+                <a class="navbar-brand d-flex align-items-center" href="Index.html">
+                    <img src="Img/LogoBarraNavegación.png" alt="BarraNavegación" width="140" class="Logo">
+                </a>
 
-            <a class="navbar-brand d-flex align-items-center" href="Index.html">
-                <img src="Img/LogoBarraNavegación.png" alt="BarraNavegación" width="150px" height="ms-auto" class="Logo">
-            </a>
+      
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse">
+      
+                <div class="collapse navbar-collapse" id="menuNavegacion">
 
-                <ul class="navbar-nav mx-auto nav-underline gap-4">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="Index.html">Inicio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Noticias.html">Noticias</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Personajes.html">Personajes</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Recursos</a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="Presentación.html">Presentación</a></li>
-                            <li><a class="dropdown-item" href="Mundo.html">Mundo</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                    </li>
-
-                    <div class="d-flex align-items-center mt-3 mt-lg-0">
-                        <a href="#" class="BotonSesion d-flex align-items-center gap-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalSesion">
-                            <span>Iniciar sesión</span>
+                    <ul class="navbar-nav mx-auto nav-underline gap-2 gap-lg-4 py-3 py-lg-0 text-center text-lg-start">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Index.html">Inicio</a>
+                        </li>
+          
+                        <li class="nav-item">
+                            <a class="nav-link" href="Noticias.html">Noticias</a>
+                        </li>
+          
+                        <li class="nav-item">
+                            <a class="nav-link" href="Personajes.html">Personajes</a>
+                        </li>
+          
+          
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Recursos</a>
     
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">  
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                            </svg>
-                        </a>
-                    </div>
-            
-                </div>
-            </div>
+                            <ul class="dropdown-menu dropdown-menu-dark border-0 shadow">
+                                <li><a class="dropdown-item" href="Presentación.html">Presentación</a></li>
+                                <li><a class="dropdown-item" href="Mundo.html">Mundo</a></li>
+                            </ul>
+          
+                        </li>
 
+          
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+        
+                        <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
+            
+                            <a href="#" class="nav-link BotonSesion d-flex align-items-center gap-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalSesion">
+                                <span>Iniciar sesión</span>
+            
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+            
+                            </a>
+         
+                        </li>
+         
+                    </ul>
+      
+                </div>
+    
+            </div>
+  
         </nav>
 
     </header>
 
     <main>
 
-        <section>
-
-            <div>
-                <img src="Img/Banner.png" alt="Banner" class="img-fluid w-100">
+        <section class="Banner">
+  
+            <img src="Img/Banner.png" class="img-fluid w-100 BannerImagen" alt="Banner">
+  
+            <div class="BannerContenido d-flex flex-column justify-content-center align-items-center align-items-md-end text-center text-md-end pe-md-5">
+                <h1 class="Título">Splash path</h1>
+                <h2 class="Frase">"Cada gota cuenta, cada acción transforma".</h2>
             </div>
 
-            <div>
-                <H1 class="Título">Splash path</H1>
-                <h2 class="Frase">Cada paso es una nueva aventura</h2>
-                <a href="#">
-                <img src="Img/BotonJugar.png" alt="Jugar" class="BotonBanner">
-                </a>
-            </div>
+  
+            <a href="#" class="BotonBannerContenedor">
+                <img src="Img/BotonJugar.png" class="BotonBanner img-fluid" alt="Jugar">
+            </a>
 
         </section>
 
-        <section class="container Contenedor">
-            <div style="padding: 20px;">
-                <h2 style="padding-top: 50px; color: #03045E;">Historia</h2>
-                <p>Un día, nuestro protagonista descubre que el agua de su comunidad está en peligro. Hay basura, agua desperdiciada y otros problemas que están dañando el lugar donde vive.</p>
-                <p>Para descubrir qué está pasando, comienza una aventura por la ciudad y el campo. En el camino encontrará obstáculos, nuevos retos y jefes finales que intentarán detenerlo.</p>
-                <p>¿Logrará superar todos los retos y ayudar a cuidar el agua?</p>
-                <p>¡Acompáñalo y descubre hasta dónde llegará!</p>
-            </div>
-            <div class="Imagen">
-                <img src="Img/Explorar/Imagen01.jpg" alt="Imagen01">
-            </div>
-        </section>
+        <section id="Extra" class="container py-5">
+  
+            <div class="row align-items-center my-5">
+    
+                <div class="col-12 col-md-6 text-white mb-4 mb-md-0 pe-md-4">
+     
+                    <h2 class="display-5 ColorTitulo">Historia</h2>
+                    <p class="fs-5 leading-relaxed">Un día, nuestro protagonista descubre que el agua de su comunidad está en peligro. Hay basura, agua desperdiciada y otros problemas que están dañando el lugar donde vive.</p>
+                    <p class="fs-5 leading-relaxed">Para descubrir qué está pasando, comienza una aventura por la ciudad y el campo. En el camino encontrará obstáculos, nuevos retos y jefes finales que intentarán detenerlo.</p> 
+                    <p class="fs-5 leading-relaxed">¿Logrará superar todos los retos y ayudar a cuidar el agua?</p>
+                    <p class="fs-5 leading-relaxed">¡Acompáñalo y descubre hasta dónde llegará!</p>
 
-        <section class="container Contenedor Contrario">
-            <div style="padding: 20px;">
-                <h2 style="padding-top: 30px; color: #03045E;">Misión</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis dolore eius illo reiciendis asperiores vitae rem inventore consequatur. Adipisci a iure nobis, excepturi voluptates optio earum placeat distinctio doloremque ratione.</p>
+                </div>
+    
+                <div class="col-12 col-md-6 text-center">
+      
+                    <div class="ImagenContenedor">
+                        <img src="Img/Explorar/Imagen01.jpg" class="img-fluid rounded-4 shadow-lg TarjetaImagen" alt="Imagen01">
+                    </div>
+         
+                </div>
+  
             </div>
-            <div class="Imagen">
-                <img src="Img/Explorar/Imagen02.jpg" alt="Imagen02">
+
+  
+            <div class="row align-items-center my-5 flex-column-reverse flex-md-row">
+  
+                <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
+  
+                    <div class="ImagenContenedor">
+                        <img src="Img/Explorar/Imagen02.jpg" class="img-fluid rounded-4 shadow-lg TarjetaImagen" alt="Misión">
+                    </div>
+  
+                </div>
+  
+                <div class="col-12 col-md-6 text-white ps-md-4">
+  
+                    <h2 class="display-5 ColorTitulo">Misión</h2>
+                    <p class="fs-5 leading-relaxed">Transformar la educación ambiental en la población estudiantil a través de una herramienta tecnológica gamificada que combina lógica, acción y entretenimiento. Buscamos promover el manejo adecuado de residuos y el saneamiento preventivo para impactar positivamente en la salud pública y el cuidado del agua, alineándonos con los Objetivos de Desarrollo Sostenible (ODS 3 y ODS 6).</p>
+  
+                </div>
+  
             </div>
-        </section>
 
-        <section class="container" style="padding: 20px;">
-            <h2>¿Como jugar?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus ipsam enim asperiores fuga dolor non architecto aspernatur, labore id? Sunt veritatis alias id hic enim sed fugit tenetur commodi!</p>
         </section>
-
+        
         <section class="container my-5">
             
             <a href="Personajes.html" class="Personajes mb-4 d-block position-relative text-decoration-none">
@@ -250,7 +281,7 @@
                         </div>
                         <nav>
                             <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li><a href="#">Como jugar</a></li>
+                                <li><a href="Mundo.html">Como jugar</a></li>
                             </ul>
                         </nav>
                     </div>

@@ -1,22 +1,21 @@
 :root {
-    --azul-marino: #003049;
-    --azul-oceano: #0077B6;
-    --azul-vibrante: #00B4D8;
-    --azul-cielo: #90E0EF;
-    --azul-fondo: #CAF0F8;
-    --blanco: #FFFFFF;
-}
-:root {
   --bs-body-font-family: "Nunito", sans-serif;;
+}
+@font-face {
+    font-family: 'Rain_Cartoon';
+    src: url('Fuentes/Rain\ Cartoon.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
     h1, h2, h3, h4{
-    font-family: "Grandstander", cursive;
+    font-family: "Rain_Cartoon", cursive;
     }
 }
 
+
 .Fondo{
-    background-color: #003049 !important;
+    background-color: #0e4e78 !important;
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08)
 }
@@ -40,67 +39,122 @@ body{
     color: #ffffff;
     text-shadow: 0 0 10px rgba(137, 207, 240, 0.8);
 }
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(0, 48, 73, 0.95);
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+}
 .BotonSesion{
     color: #e0e0e0;
     font-weight: 500;
     transition: color 0.2s ease;
+    margin-top: -2px;
 }
 .BotonSesion:hover {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(137, 207, 240, 0.8);
 }
 .BotonSesion svg {
-  color: #c0c0c0;
-  transition: transform 0.2s ease, color 0.3s ease;
+    color: #c0c0c0;
+    transition: transform 0.2s ease, color 0.3s ease;
 }
 .BotonSesion:hover svg {
-  color: #ffffff;
-  transform: scale(1.1);
+    color: #ffffff;
+    transform: scale(1.1);
 }
-.Título{
-    position: absolute;
-    top: 300px; 
-    left: 800px;
-    font-size: 100px; 
+
+
+.Banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 60px;
 }
-.Frase{
-    position: absolute;
-    top: 400px; 
-    left: 870px;
-    font-size: 30px;
+.BannerImagen {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
+    display: block;
 }
-.BotonBanner{
+.BannerContenido {
     position: absolute;
-    top: 420px;
-    left: 250px;
-    height: 100px;
-    transition: all 0.3s ease;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 90%;
+}
+.Título {
+    font-size: clamp(2.2rem, 5vw, 5.5rem);
+    color: var(--blanco, #ffffff);
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.Frase {
+    font-size: clamp(1rem, 2vw, 2.2rem);
+    color: var(--blanco, #ffffff);
+    text-shadow: 2px 3px 8px #000000cc;
+    margin-bottom: 0;
+}
+.BotonBannerContenedor {
+    position: absolute;
+    bottom: 30%;
+    left: 18%;
+    z-index: 3;
+}
+.BotonBanner {
+    width: clamp(130px, 18vw, 260px) !important;
+    height: auto !important;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .BotonBanner:hover {
-    transform: translateY(-3px) scale(1.05);
+    transform: scale(1.08);
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.7));
+}
+@media (max-width: 576px) {
+  .BannerContenido {
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .BotonBannerContenedor {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+  }
 }
 
 
-.Contenedor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 80px;
-  position: relative;
+.ColorTitulo{
+    color: #03045E;
 }
-.Contenedor.Contrario {
-  flex-direction: row-reverse;
+.leading-relaxed {
+    color: black;
 }
-.Imagen {
-    margin-top: 45px;
-    width: 58%;
-    z-index: 1;                   
+.TarjetaImagen {
+    max-height: 380px;
+    width: 100%;
+    object-fit: cover;
 }
-.Imagen img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  display: block;
+@media (max-width: 767px) {
+  #Extra h2 {
+    text-align: center;
+  }
+  #Extra p {
+    text-align: center;
+  }
+  .Extra {
+    max-height: 280px;
+  }
 }
 
 
@@ -162,32 +216,37 @@ body{
     box-shadow: 0 0 8px #ffffff;
 }
 
-.FondoFooter{
-    background-image: url(Img/Footer.png);
-    background-size: cover;
-    background-position: center bottom;
+.FondoFooter {
+    background-image: url('Img/Footer.png');
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
-    padding-top: 80px; 
-    padding-bottom: 40px;
+    min-height: 400px;
+    padding: 80px 40px 40px 40px;
+    box-sizing: border-box;
 }
-footer .container{
-    padding-left: 250px
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 180px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-footer{
-    color: #FFFFFF;
+
+footer {
+  color: #FFFFFF;
 }
-footer img{
-    display: block;
-    justify-content: center;
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
-footer a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-footer a:hover{
-    opacity: 0.8;
-    color: #a5f3fc !important;
+
+footer a:hover {
+  opacity: 0.8;
+  color: #a5f3fc !important;
 }
 
 

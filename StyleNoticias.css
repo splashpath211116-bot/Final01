@@ -9,13 +9,21 @@
 :root {
   --bs-body-font-family: "Nunito", sans-serif;;
 }
+@font-face {
+    font-family: 'Rain_Cartoon';
+    src: url('Fuentes/Rain\ Cartoon.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-    h1, h2, h3{
-    font-family: "Grandstander", cursive;
+    h1, h2, h3, h4, h5{
+    font-family: "Rain_Cartoon", cursive;
     }
 }
+
+
 .Fondo{
-    background-color: #03045E !important;
+    background-color: #0e4e78 !important;
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08)
 }
@@ -94,32 +102,37 @@ body{
 }
 
 
-.FondoFooter{
-    background-image: url(Img/Footer.png);
-    background-size: cover;
-    background-position: center bottom;
+.FondoFooter {
+    background-image: url('Img/Footer.png');
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 400px;
-    padding-top: 80px; 
-    padding-bottom: 40px;
+    padding: 80px 40px 40px 40px;
+    box-sizing: border-box;
 }
-footer .container{
-    padding-left: 250px
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 180px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-footer{
-    color: #FFFFFF;
+
+footer {
+  color: #FFFFFF;
 }
-footer img{
-    display: block;
-    justify-content: center;
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
-footer a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-footer a:hover{
-    opacity: 0.8;
-    color: #a5f3fc !important;
+
+footer a:hover {
+  opacity: 0.8;
+  color: #a5f3fc !important;
 }
 
 .Inicio {

@@ -9,14 +9,21 @@
 :root {
   --bs-body-font-family: "Nunito", sans-serif;;
 }
+@font-face {
+    font-family: 'Rain_Cartoon';
+    src: url('Fuentes/Rain\ Cartoon.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
     h1, h2, h3, h4{
-    font-family: "Grandstander", cursive;
+    font-family: "Rain_Cartoon", cursive;
     }
 }
 
+
 .Fondo{
-    background-color: #003049 !important;
+    background-color: #315C4A !important;
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08)
 }
