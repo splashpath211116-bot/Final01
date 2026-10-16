@@ -16,58 +16,93 @@
 
 </head>
 <body style="background-color: #F4F1DE;">
-    <header class="content">
+    
+    <!-- Barra de navegación -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark Fondo fixed-top px-4">
+    <header class="content">
+  
+        <nav class="navbar navbar-expand-lg navbar-dark Fondo fixed-top px-3 px-md-4">
+    
             <div class="container-fluid">
 
-            <a class="navbar-brand d-flex align-items-center" href="Index.html">
-                <img src="Img/LogoBarraNavegación.png" alt="BarraNavegación" width="120px" height="60px" class="Logo">
-            </a>
+                <a class="navbar-brand d-flex align-items-center" href="Index.html">
+                    <img src="Img/LogoBarraNavegación.png" alt="Splash Path" width="140" class="Logo">
+                </a>
 
-            <div class="collapse navbar-collapse">
+                <!-- Para celulares -->
 
-                <ul class="navbar-nav mx-auto nav-underline gap-4">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="Index.html">Inicio</a>
-                    </li>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="Noticias.html">Noticias</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="menuNavegacion">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="Personajes.html">Personajes</a>
-                    </li>
+                    <ul class="navbar-nav mx-auto nav-underline gap-2 gap-lg-3 py-3 py-lg-0 text-center text-lg-start align-items-center">
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">
+                                <i class="bi bi-house-door-fill me-1"></i> Inicio
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">Recursos</a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="Presentación.html">Presentación</a></li>
-                            <li><a class="dropdown-item" href="Mundo.html">Mundo</a></li>
-                        </ul>
-                    </li>
+          
+                        <li class="nav-item">
+                            <a class="nav-link" href="Noticias.html">
+                                <i class="bi bi-newspaper me-1"></i> Noticias
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                    </li>
+          
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Personajes.html">
+                                <i class="bi bi-people-fill me-1"></i> Personajes
+                            </a>
+                        </li>
 
-                    <div class="d-flex align-items-center mt-3 mt-lg-0">
-                        <a href="#" class="BotonSesion d-flex align-items-center gap-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalSesion">
+          
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="bi bi-collection-play-fill me-1"></i> Recursos
+                            </a>
+          
+                            <ul class="dropdown-menu dropdown-menu-dark border-0 shadow-lg rounded-4">
+                                <li><a class="dropdown-item py-2" href="Presentación.html">Presentación</a></li>
+                                <li><a class="dropdown-item py-2" href="Mundo.html">Mundo</a></li>
+                            </ul>
+          
+                        </li>
+          
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">
+                                <i class="bi bi-info-circle-fill me-1"></i> Nosotros
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Iniciar sesión -->
+
+                    <div class="d-flex justify-content-center mt-3 mt-lg-0">
+              
+                        <a href="#" class="nav-link BotonSesion d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modalSesion">
+                            
                             <span>Iniciar sesión</span>
-    
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">  
+            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                             </svg>
+          
                         </a>
+
                     </div>
-            
+
                 </div>
+            
             </div>
         </nav>
     </header>
+
 
     <main>
         <section>

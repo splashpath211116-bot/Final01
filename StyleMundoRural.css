@@ -21,6 +21,45 @@ body{
     }
 }
 
+/* Dentro del modal */
+/* Estilo base de los botones */
+.btn-interactivo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto al pasar el cursor por encima */
+.btn-interactivo:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* --- COORDENADAS DE POSICIÓN --- */
+.btn-personaje {
+  top: 48%;
+  left: 10.5%;
+}
+
+.btn-enemigo {
+  top: 64%;
+  left: 44.5%;
+}
+
+.btn-plataforma {
+  top: 50%;
+  left: 69.5%;
+}
 
 .Fondo{
     background-color: #0e4e78 !important;
