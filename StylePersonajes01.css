@@ -139,6 +139,51 @@ body{
     box-shadow: 0 6px 15px wheat;
 }
 
+@media (max-width: 768px) {
+  
+  /* Damos más espacio de separación arriba respecto a la barra de navegación */
+  .Centrar {
+    width: 90% !important;
+    padding: 0 !important;
+    margin: 130px auto 20px auto !important; /* Subimos el margen superior a 40px */
+  }
+
+  /* Bajamos más la tarjeta para que no se cruce con el menú superior y se vea centrada */
+  .Tarjeta {
+    margin-top: 80px !important; /* <-- Aquí aumentamos para que baje más */
+    margin-bottom: 40px !important;
+    padding-top: 25px !important;
+  }
+
+  .Tarjeta .row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* La imagen del personaje arriba */
+  .Imagen {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    height: 240px !important;
+    margin: 0 auto 10px auto !important;
+    display: block !important;
+  }
+
+  /* Flechas flotantes a los lados */
+  .btn-nav-flotante {
+    display: flex !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem !important;
+    z-index: 30 !important;
+  }
+
+  .btn-prev { left: -15px !important; }
+  .btn-next { right: -15px !important; }
+}
+
 /* Footer */
 
 .FondoFooter {
